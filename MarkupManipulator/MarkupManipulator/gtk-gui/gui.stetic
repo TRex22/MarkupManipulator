@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+    <target-gtk-version>2.12</target-gtk-version>
+  </configuration>
+  <import>
+    <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <widget-library name="../bin/Debug/MarkupManipulator.exe" internal="true" />
+  </import>
+  <widget class="Gtk.Window" id="MainWindow" design-size="780 468">
+    <action-group name="Default">
+      <action id="FileAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">File</property>
+        <property name="ShortLabel" translatable="yes">File</property>
+      </action>
+      <action id="FileAction1">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">File</property>
+        <property name="ShortLabel" translatable="yes">File</property>
+      </action>
+      <action id="EditAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Edit</property>
+        <property name="ShortLabel" translatable="yes">Edit</property>
+      </action>
+      <action id="ViewAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">View</property>
+        <property name="ShortLabel" translatable="yes">View</property>
+      </action>
+      <action id="SearchAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Search</property>
+        <property name="ShortLabel" translatable="yes">Search</property>
+      </action>
+      <action id="ProjeCtAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Proje ct</property>
+        <property name="ShortLabel" translatable="yes">Proje ct</property>
+      </action>
+      <action id="BuildAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Build</property>
+        <property name="ShortLabel" translatable="yes">Build</property>
+      </action>
+      <action id="ToolsAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Tools</property>
+        <property name="ShortLabel" translatable="yes">Tools</property>
+      </action>
+      <action id="WindowAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Window</property>
+        <property name="ShortLabel" translatable="yes">Window</property>
+      </action>
+      <action id="HelpAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Help</property>
+        <property name="ShortLabel" translatable="yes">Help</property>
+      </action>
+      <action id="ExitAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Exit</property>
+        <property name="ShortLabel" translatable="yes">Exit</property>
+      </action>
+    </action-group>
+    <property name="MemberName">MainWindow</property>
+    <property name="Title" translatable="yes">MarkupManipulator</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <property name="BorderWidth">6</property>
+    <signal name="DeleteEvent" handler="OnDeleteEvent" />
+    <child>
+      <widget class="Gtk.Fixed" id="fixed1">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <child>
+          <widget class="Gtk.MenuBar" id="menubar6">
+            <property name="MemberName" />
+            <signal name="SelectionDone" handler="Exit" />
+            <node name="__gtksharp_138_Stetic_Editor_ActionMenuBar" type="Menubar">
+              <node type="Menu" action="FileAction1">
+                <node type="Menuitem" action="ExitAction" />
+              </node>
+              <node type="Menu" action="EditAction" />
+              <node type="Menu" action="ViewAction" />
+              <node type="Menu" action="SearchAction" />
+              <node type="Menu" action="ProjeCtAction" />
+              <node type="Menu" action="BuildAction" />
+              <node type="Menu" action="ToolsAction" />
+              <node type="Menu" action="WindowAction" />
+              <node type="Menu" action="HelpAction" />
+            </node>
+          </widget>
+          <packing>
+            <property name="X">-1</property>
+            <property name="Y">3</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</stetic-interface>
